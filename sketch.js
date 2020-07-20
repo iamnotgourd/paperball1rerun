@@ -38,13 +38,12 @@ function draw() {
   dustbinBottom.display();
   dustbinLeft.display();
   dustbinRight.display();
-  keyPressed();
   drawSprites();
 
 }
 function keyPressed(){
      if(keyCode === UP_ARROW){
-		 Matter.body.applyForce(ball.body,ball.body.position,{x:200,y:-85})
+		 Matter.Body.applyForce(ball.body,ball.body.position,{x:200,y:-85})
 	 }
 
 }
